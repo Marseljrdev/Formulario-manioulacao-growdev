@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Formulario</h1>
+    <div id="container-1">
+    <form action="menu"></form>
+    <hr>
+        <label >Dados pessoais</label><br><br>
+        <label >Nome:</label>
+        <input type="text" required id="nome"> <br><br>
+        <label  >Endereço:</label>
+        <input type="text" id="endereco" required><br><br>
+        <label >Cidade:</label>
+        <input type="text" id="cidade" required><br><br>
+        <label >Estado:</label>
+
+        <select  value="default" id="estado">
+            <option value="Selecione" >--Selecione--</option>
+            <option value="Ceará">Ceará</option>
+            <option value="São Paulo">São Paulo</option>
+            <option value="Rio de Janeiro">Rio de Janeiro</option>
+        </select>
+        </form>
+    </div>
+
+    <br><br>
+
+
+
+    <form action="menu">
+        <label >Dados profissionais</label><br><br> <hr>
+        <label >Natureza do cargo</label><br><br>
+        <input type="radio" name="" id="" checked>
+        <label >Gerência</label>
+        <input type="radio" name="" id="" >
+        <label >Financeiro</label>
+        <input type="radio" name="" id="" >
+        <label >Recepção</label>
+        <input type="radio" name="" id="" >
+        <label >Administrativo</label>
+        <input type="radio" name="" id="" >
+        <label >Juridico</label>
+        <br><br>
+        
+        <label >Area de interesse</label><br><br>
+        <input type="checkbox" name="" id="">
+        <label >Computação</label>
+        <input type="checkbox" name="" id="" >
+        <label >Biologia</label>
+        <input type="checkbox" name="" id="" >
+        <label >Meio Ambiente</label>
+        <input type="checkbox" name="" id="" >
+        <label >Engenharia</label>
+        <input type="checkbox" name="" id="" >
+        <label >História</label>
+        <br><br>
+        <div id="div-final">
+         <label  id="text">Mini Curriculo:</label>
+         <input type="text" id="curriculo">
+        </div>
+        <hr>
+        
+        
+    </form>
+
+    <div id="btn">
+        <button type="button" onclick="armazenar()">enviar</button>
+        <button type="cancelar">cancelar</button>
+
+    </div>
+    
+    
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
